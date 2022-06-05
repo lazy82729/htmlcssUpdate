@@ -1,0 +1,407 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 46px;
+  text-align: center;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+sub {
+  vertical-align: sub;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+header {
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/bg_home.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+header .header-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 24px 0 54px 0;
+}
+
+header .header-section img {
+  width: 218px;
+}
+
+header .header-section .button {
+  background: #FF5D50;
+  font-size: 16px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 8px 32px;
+  border-radius: 22px;
+}
+
+header .header-section .button:hover {
+  color: #FF5D50;
+  background: #FFFFFF;
+}
+
+header .header-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 116px;
+}
+
+header .header-content .chat-box {
+  width: 553px;
+}
+
+header .header-content .chat-box p {
+  color: #56C4C5;
+  font-size: 18px;
+}
+
+header .header-content .chat-box h1 {
+  font-size: 48px;
+  text-align: left;
+  line-height: 70px;
+  font-weight: bold;
+  color: #221E1F;
+  padding: 8px 0 16px 0px;
+}
+
+header .header-content .chat-box .detail {
+  color: #221E1F;
+  font-size: 20px;
+}
+
+header .header-content img {
+  width: 532px;
+  height: 534px;
+}
+
+main .social {
+  margin-top: 101px;
+  margin-bottom: 100px;
+}
+
+main .social h2 {
+  text-align: center;
+  margin-bottom: 32px;
+  color: #221E1F;
+}
+
+main .social .social-tag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 48px;
+}
+
+main .social .social-tag img {
+  width: 90px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+
+main .social .social-tag .name {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 24px;
+  line-height: 35px;
+}
+
+main .social .social-tag .tell {
+  color: #747474;
+  text-align: center;
+  line-height: 24px;
+}
+
+main .role {
+  margin-bottom: 100px;
+}
+
+main .role .role1 {
+  text-align: center;
+  font-size: 20px;
+  line-height: 29px;
+  margin: 16px 0px 48px 0px;
+}
+
+main .role .role-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+  width: calc(25%-16px);
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .role .role-card li {
+  width: 260px;
+  background: #FFFFFF;
+  border-radius: 12px 12px 12px 12px;
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+}
+
+main .role .role-card img {
+  border-radius: 12px 12px 0px 0px;
+}
+
+main .role .role-card .name {
+  color: #56C4C5;
+  line-height: 24px;
+  text-align: center;
+  padding: 16px 0px;
+}
+
+main .role .role-card .detail {
+  line-height: 24px;
+  color: #221E1F;
+  text-align: center;
+  padding-bottom: 24px;
+}
+
+main .plan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+main .plan .plan-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 554px;
+  margin-right: -47px;
+  margin-bottom: -28px;
+}
+
+main .plan .plan-list li {
+  width: 230px;
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+  border-radius: 12px;
+  padding: 32px 0px 48px 32px;
+  margin-right: 47px;
+  margin-bottom: 28px;
+}
+
+main .plan .plan-list img {
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+}
+
+main .plan .plan-list .list1 {
+  padding: 17px 15px 17px 19px;
+}
+
+main .plan .plan-list .list2 {
+  padding: 17.41px 17.86px;
+}
+
+main .plan .plan-list .list3 {
+  padding: 22.49px 19.76px;
+}
+
+main .plan .plan-list .list4 {
+  padding: 21.3px 22px;
+}
+
+main .plan .plan-list h3 {
+  font-size: 18px;
+  font-weight: bold;
+  text-align-last: left;
+  margin-bottom: 16px;
+  line-height: 26px;
+}
+
+main .plan .plan-list p {
+  color: #221E1F;
+  line-height: 24px;
+  text-align: left;
+}
+
+main .plan .plan-content {
+  width: 395px;
+  margin-left: 137px;
+}
+
+main .plan .plan-content h2 {
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+main .plan .plan-content p {
+  text-align: left;
+  margin-bottom: 24%;
+}
+
+main .plan .plan-content a {
+  display: inline;
+  font-size: 18px;
+  color: #FFFFFF;
+  background: #56C4C5;
+  padding: 12px 32px;
+  border-radius: 27px;
+}
+
+main .plan .plan-content a:hover {
+  color: #56C4C5;
+  background: #FFFFFF;
+}
+
+.footer-plan {
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/home_footer.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 100px;
+  height: 503px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-plan h2 {
+  margin-bottom: 48px;
+}
+
+.footer-plan a {
+  display: inline;
+  width: 136px;
+  font-size: 18px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #56C4C5;
+  padding: 12px 32px;
+  border-radius: 27px;
+}
+
+.footer-plan a:hover {
+  color: #56C4C5;
+  background: #FFFFFF;
+}
+
+@media (max-width: 767px) {
+  .footer-plan {
+    height: 461px;
+  }
+}
+
+footer {
+  background: #F5F5F5;
+  text-align: center;
+  padding: 16px 0;
+}
+/*# sourceMappingURL=all.css.map */

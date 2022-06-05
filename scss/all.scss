@@ -1,0 +1,320 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+// 環境設定
+*,*:before,*:after{box-sizing:border-box;}
+
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+    line-height: 1.5;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+h2{
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 46px;
+    text-align: center;
+}
+a{
+    display: block;
+    text-decoration: none;
+}
+sub{
+    vertical-align: sub;
+}
+.container{
+    max-width: 1120px;
+    margin: 0 auto;
+    padding:0 16px;
+
+}
+header{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/bg_home.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+        .header-section{
+            display: flex;
+            justify-content: space-between;
+            padding: 24px 0 54px 0;
+            img{
+                width: 218px;
+            }
+            .button{
+                background: #FF5D50;
+                font-size: 16px;
+                text-align: center;
+                color: #FFFFFF;
+                padding: 8px 32px;
+                border-radius: 22px;
+                &:hover{
+                    color: #FF5D50;
+                    background: #FFFFFF;
+                }
+        }
+    }
+        .header-content{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 116px;
+            .chat-box{
+                width: 553px;
+                p{
+                    color: #56C4C5;
+                    font-size: 18px;
+                }
+                h1{
+                    font-size: 48px;
+                    text-align: left;
+                    line-height: 70px;
+                    font-weight: bold;
+                    color: #221E1F;
+                    padding: 8px 0 16px 0px;
+                }
+                .detail{
+                    color: #221E1F;
+                    font-size: 20px;
+                }
+            }
+            img{
+                // 人的位置不對
+                width: 532px;
+                height: 534px;
+            }
+        }
+}
+main{
+    .social{
+        margin-top: 101px;
+        margin-bottom: 100px;
+        h2{
+            text-align: center;
+            margin-bottom: 32px;
+            color: #221E1F;
+        }
+        .social-tag{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 48px;
+            img{
+                width: 90px;
+                margin: 0 auto;
+                margin-bottom: 24px;
+            }
+            .name{
+                font-size: 24px;
+                font-weight: bold;
+                text-align: center;
+                margin-bottom: 24px;
+                line-height: 35px;
+            }
+            .tell{
+                color: #747474;
+                text-align: center;
+                line-height: 24px;
+            }
+        }
+        
+    }
+    .role{
+        margin-bottom: 100px;
+        .role1{
+            text-align: center;
+            font-size: 20px;
+            line-height: 29px;
+            margin: 16px 0px 48px 0px;
+        }
+        .role-card{
+            display: flex;
+            gap: 16px;
+            width: calc(25%-16px);
+            flex-wrap: wrap;
+            li{
+                width: 260px;
+                background: #FFFFFF;
+                border-radius: 12px 12px 12px 12px;
+                box-shadow: 0px 2px 10px #00000014;
+            }
+            img{
+                border-radius: 12px 12px 0px 0px;
+            }
+            .name{
+                color: #56C4C5;
+                line-height: 24px;
+                text-align: center;
+                padding: 16px 0px;
+            }
+            .detail{
+                line-height: 24px;
+                color: #221E1F;
+                text-align: center;
+                padding-bottom: 24px;
+            }
+        }
+    }
+    .plan{
+        display: flex;
+        // justify-content: flex-around;
+        align-content: center;
+        .plan-list{
+            display: flex;
+            flex-wrap: wrap;
+            width: 554px;
+            margin-right: -47px;
+            margin-bottom: -28px;
+            li{
+                width: 230px;
+                box-shadow: 0px 2px 10px #00000014;
+                border-radius: 12px;
+                padding:32px 0px 48px 32px;
+                margin-right: 47px;
+                margin-bottom: 28px;
+            }
+            img{
+                width: 86px;
+                height: 86px;
+                border-radius: 50%;
+                background: #FFFFFF 0% 0% no-repeat padding-box;
+                box-shadow: 0px 2px 10px #00000014;
+                // margin: 0px 112px 24px 0px;
+            }
+            .list1{
+                padding: 17px 15px 17px 19px;
+            }
+            // 圖片2-4顯示不完全
+            .list2{
+                padding: 17.41px 17.86px;
+            }
+            .list3{
+                padding: 22.49px 19.76px;
+            }
+            .list4{
+                padding: 21.3px 22px;
+            }
+            h3{
+                font-size: 18px;
+                font-weight: bold;
+                text-align-last: left;
+                margin-bottom: 16px;
+                line-height: 26px;
+            }
+            p{
+                color: #221E1F;
+                line-height: 24px;
+                text-align: left;
+            }
+        }
+        .plan-content{
+            width: 395px;
+            margin-left: 137px;
+            h2{
+                text-align: left;
+                margin-bottom: 16px;
+            }
+            p{
+                text-align: left; 
+                margin-bottom: 24%;
+            }
+            a{
+                display: inline;
+                font-size: 18px;
+                color: #FFFFFF;
+                background: #56C4C5;
+                padding: 12px 32px;
+                border-radius: 27px;
+                &:hover{
+                    color: #56C4C5;
+                    background: #FFFFFF;
+                }
+            }
+        }
+    }
+}
+.footer-plan{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/home_footer.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 100px;
+    height: 503px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;    
+    h2{
+        margin-bottom: 48px;
+    }
+    a{
+        display: inline;
+        width: 136px;
+        font-size: 18px;
+        text-align: center;
+        color: #FFFFFF;
+        background: #56C4C5;
+        padding: 12px 32px;
+        border-radius: 27px;
+        &:hover{
+            color: #56C4C5;
+            background: #FFFFFF;
+        }
+    }   
+}
+@media(max-width:767px){
+    .footer-plan{
+        height: 461px;
+    }
+}
+footer{
+    background: #F5F5F5;
+    text-align: center;
+    padding: 16px 0;
+}
