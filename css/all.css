@@ -90,6 +90,14 @@ sub {
   padding: 0 16px;
 }
 
+@media (max-width: 375px) {
+  .container {
+    max-width: 335px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+}
+
 header {
   background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/bg_home.svg);
   background-repeat: no-repeat;
@@ -259,8 +267,13 @@ main .plan {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-box-pack: flex-around;
+      -ms-flex-pack: flex-around;
+          justify-content: flex-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 100px;
 }
 
 main .plan .plan-list {
@@ -291,6 +304,7 @@ main .plan .plan-list img {
   background: #FFFFFF 0% 0% no-repeat padding-box;
   -webkit-box-shadow: 0px 2px 10px #00000014;
           box-shadow: 0px 2px 10px #00000014;
+  margin-bottom: 24px;
 }
 
 main .plan .plan-list .list1 {
@@ -324,6 +338,13 @@ main .plan .plan-list p {
 }
 
 main .plan .plan-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 395px;
   margin-left: 137px;
 }
@@ -339,7 +360,7 @@ main .plan .plan-content p {
 }
 
 main .plan .plan-content a {
-  display: inline;
+  width: 136px;
   font-size: 18px;
   color: #FFFFFF;
   background: #56C4C5;
@@ -352,11 +373,71 @@ main .plan .plan-content a:hover {
   background: #FFFFFF;
 }
 
+.review {
+  margin-bottom: 100px;
+  margin-right: -16px;
+}
+
+.review h2 {
+  margin-bottom: 104px;
+}
+
+.review .review-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.review .review-card li {
+  width: 352px;
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+  border-radius: 12px;
+  padding: 48px 32px 24px 32px;
+  position: relative;
+  margin-right: 16px;
+}
+
+.review .review-card .review-card-person {
+  width: 80px;
+  border-radius: 50%;
+  position: absolute;
+  top: -48px;
+}
+
+.review .review-card .review-card-p1 {
+  line-height: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #00000014;
+}
+
+.review .review-card .review-card-p2 {
+  font-weight: bold;
+  padding: 24px 0px 8px 0px;
+}
+
+.review .review-card .review-star {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.review .review-card .review-star .star {
+  width: 121.02px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
 .footer-plan {
   background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/home_footer.svg);
   background-repeat: no-repeat;
-  background-position: center;
-  margin-bottom: 100px;
+  background-position: top;
   height: 503px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -368,35 +449,38 @@ main .plan .plan-content a:hover {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+.footer-plan .container {
+  margin-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.footer-plan h2 {
+.footer-plan .container h2 {
   margin-bottom: 48px;
 }
 
-.footer-plan a {
-  display: inline;
+.footer-plan .container a {
   width: 136px;
   font-size: 18px;
-  text-align: center;
   color: #FFFFFF;
   background: #56C4C5;
   padding: 12px 32px;
   border-radius: 27px;
 }
 
-.footer-plan a:hover {
+.footer-plan .container a:hover {
   color: #56C4C5;
   background: #FFFFFF;
-}
-
-@media (max-width: 767px) {
-  .footer-plan {
-    height: 461px;
-  }
 }
 
 footer {
